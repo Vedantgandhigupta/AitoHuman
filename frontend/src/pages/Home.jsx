@@ -39,7 +39,7 @@ export default function Home() {
 
     try {
       // In production, point to the deployed backend URL
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/humanize';
+      const apiUrl = import.meta.env.VITE_API_URL || 'https://aitohuman.onrender.com/humanize';
       
       const response = await fetch(apiUrl, {
         method: 'POST',
