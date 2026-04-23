@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // API Endpoint to humanize text
-app.post('https://aitohuman.onrender.com/api/humanize', async (req, res) => {
+app.post('/api/humanize', async (req, res) => {
     const { text, tone, intensity } = req.body;
     
     if (!text) {
